@@ -1,0 +1,215 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2f4f8;
+}
+
+/* =========================================
+   PART 1 – NAVBAR (Landing Page)
+========================================= */
+#part1 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav {
+  color: rgb(156, 156, 224);
+}
+
+/* =========================================
+   BUTTONS – COMMON STYLE
+========================================= */
+#but1,
+#but2,
+#but3 {
+  background-color: rgb(117, 117, 232);
+  color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+#but1:hover,
+#but2:hover,
+#but3:hover {
+  background-color: rgb(90, 90, 210);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Active */
+#but1:active,
+#but2:active,
+#but3:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   PART 2 – HERO SECTION
+========================================= */
+#part2 {
+  text-align: center;
+  color: rgb(31, 27, 27);
+  font-weight: bold;
+  padding: 30px 50px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* =========================================
+   PART 3 – FEATURE CARDS
+========================================= */
+#part3 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+#part3 div {
+  background: white;
+  padding: 20px 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+#part3 div:hover {
+  transform: translateY(-6px);
+}
+
+#part3 h2 {
+  font-size: 18px;
+ 
+}
+
+#part3 h3 {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+}
+
+#part3 img {
+  height: 60px;
+  width: 200px;
+  object-fit: contain;
+}
+
+/* =========================================
+   DASHBOARD LAYOUT
+========================================= */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #e7e7e7;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover
+ {
+  background-color: #b7c5ff;
+}
+
+/* =========================================
+   DASHBOARD MAIN CONTENT
+========================================= */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.main h1 {
+  margin-bottom: 10px;
+
+}
+
+/* Cards */
+.cards {
+display: grid;
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Task List */
+.task-list {
+  margin-top: 10px;
+}
+
+.task-list li {
+  margin-bottom: 8px;
+}
+
+/* Progress Circle */
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #e5e7eb;
+  border-top: 10px solid #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.progress-text {
+  text-align: center;
+  color: #475569;
+}
